@@ -6,10 +6,7 @@ body{
     width: 95%;
     margin: 0 auto
 }
-#background {
-    display: flex;
-    justify-content: center;
-}
+
 .card {
     max-width: 500px;
     margin: auto;
@@ -84,11 +81,11 @@ button:hover, a:hover {
     color: black;
 }
   /* about Me*/
-.aboutMe1 {grid-area: header;}
-.aboutMe2 {grid-area: main;}
-.aboutMe3 {grid-area: header2;}
-.aboutMe4 {grid-area: footer;}
-.aboutMe5 {grid-area: footer2;}
+.aboutMe1 {grid-area: header; font-size: 20px;}
+.aboutMe2 {grid-area: main; font-size: 18px;}
+.aboutMe3 {grid-area: header2; font-size: 20px;}
+.aboutMe4 {grid-area: footer; font-size: 18px;}
+.aboutMe5 {grid-area: footer2; font-size: 18px;}
 .grid {
     display: grid;
     grid-template-areas:
@@ -152,10 +149,9 @@ td, th {
     font-weight: bold;
     color:rgb(0, 0, 0)
 }
-
 .institution {
     font-size: 18px;
-    color:rgba(0, 0, 0, 0.423)
+    color:rgba(0, 0, 0, 0.423);
 }
 /*Contact Form*/
 #contact-group {
@@ -217,446 +213,28 @@ td, th {
 .js {width: 60%; background-color: #1cc2ceda;}
 .html-skill {width: 60%; background-color: #1cc2ceda;}
 
-@media (max-width: 400px) {
-    html {
-        font-family: 'Raleway', sans-serif;
-    }
-    body{
-        width: 95%;
-        margin: 0 auto
-    }
-    #background {
-        display: flex;
-        justify-content: center;
-    }
-    .card {
-        width: 100%;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-    .title {
-        color: grey;
-        font-size: 18px;
-    }
-    #links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .downloadArea {
-        border: none;
-        margin: 30px;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-    }
-    .resumeDL {
-        background-color: white; 
-        color: black; 
-        border: 2px solid #4861b0;
-    }
-    .resumeDL:hover {
-        background-color: #4861b0;
-        color: white;
-    }
-    .sendEmail {
-        background-color: white; 
-        color: black; 
-        border: 2px solid #008bbaf9;
-    }
-    .sendEmail:hover {
-        background-color: #008bbaf9;
-        color: white;
-    }
-    .a-cvArea {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-    }
-    button:hover, a:hover {
-        opacity: 0.7;
-    }
-    .profile-pic {
-        width: 100%;
-        margin-top: 50px;
-        height: auto;
-    } 
-    .mainContent {
-        padding: 70px;
-        background-color:rgba(144, 144, 144, 0.813);
-    }
-    .icon{
-        margin: 24px 0;
-    }
-    .a-icon{
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-    }
-    /* about Me*/
-    .aboutMe1 {grid-area: header;}
-    .aboutMe2 {grid-area: main;}
-    .aboutMe3 {grid-area: header2;}
-    .aboutMe4 {grid-area: footer;}
-    .aboutMe5 {grid-area: footer2;}
-    .grid {
-        display: grid;
-        grid-template-areas:
-        'header'
-        'main'
-        'header2'
-        'footer'
-        'footer2';
-        gap: 10px;
-        background-color:rgba(144, 144, 144, 0.813);
-        padding-left:70px;
-        padding-top: 0;
-        padding-bottom: 0;
-        margin: 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }   
-    /* Table -basic info   */
-    .table-about {
-        border-collapse: separate;
-        width: 100%;
-        border-spacing: 0;
-        background-color:rgb(170, 186, 202);
-        padding-left:70px;
-        padding-top: 0;
-        padding-bottom: 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    td, th {
-        text-align: left;
-        margin: 0;
-        padding: 10px 10px 10px 10px;
-    }
-    .aboutMe6 {
-        padding: 70px;
-        background-color:rgb(170, 186, 202);
-    }
-    /*academic*/
-    .table-academic {
-        border-collapse: collapse;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 100%;
-        border-spacing: 20px;
-        padding: 70px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    .credential-area {
-        background-color: aquamarine;
-        height:200px;
-        padding-left: 70px;
-    }
-    .program-area {
-        width:70%;
-    }
-    .credential {
-        font-size: 20px;
-        font-weight: bold;
-        color:rgb(0, 0, 0)
-    }
-    .period {
-        font-size: 18px;
-        color:rgba(0, 0, 0, 0.423)
-    }
-    .program {
-        font-size: 20px;
-        font-weight: bold;
-        color:rgb(0, 0, 0)
-    }
-    .institution {
-        font-size: 18px;
-        color:rgba(0, 0, 0, 0.423)
-    }
-    /*Contact Form*/
-    #contact-group {
-        background-color: rgba(223, 219, 219, 0.874);
-        padding-left: 70px;
-        margin-bottom: 50px;
-        box-sizing: border-box;
-        font-size: 18px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    .contact-group-title {
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .vistor-data {
-        width:70%;
-        height: 30px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    #message{
-        width:70%;
-    }
-    #contact-submit{
-        border: none;
-        margin: 30px;
-        border: none;
-        color: rgba(0, 0, 0, 0.78);
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-    }
-    /*Skill bar*/
-    .container-skill {
-        width: 100%;
-        background-color: #d6d1d1;
-        border-radius: 30px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    .skills {
-        text-align: right;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color: rgb(255, 255, 255);
-        border-radius: 30px;
-    }
-    .title-skill {
-        text-align: left;  
-        color: rgb(0, 0, 0);
-        font-size: 18px;
-    }
-    .excel {width: 90%; background-color: #1cc2ceda;}
-    .cPlusPlus {width: 70%; background-color: #1cc2ceda;}
-    .js {width: 60%; background-color: #1cc2ceda;}
-    .html-skill {width: 60%; background-color: #1cc2ceda;}
+
+#background {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-@media (min-width: 401px) {
-    html {
-        font-family: 'Raleway', sans-serif;
-    }
-    body{
-        width: 95%;
-        margin: 0 auto
-    }
-    #background {
-        display: flex;
-        justify-content: center;
-    }
-    .card {
-        max-width: 500px;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-    .title {
-        color: grey;
-        font-size: 18px;
-    }
-    #links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .downloadArea {
-        border: none;
-        margin: 30px;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-    }
-    .resumeDL {
-        background-color: white; 
-        color: black; 
-        border: 2px solid #4861b0;
-    }
-    .resumeDL:hover {
-        background-color: #4861b0;
-        color: white;
-    }
-    .sendEmail {
-        background-color: white; 
-        color: black; 
-        border: 2px solid #008bbaf9;
-    }
-    .sendEmail:hover {
-        background-color: #008bbaf9;
-        color: white;
-    }
-    .a-cvArea {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-    }
-    button:hover, a:hover {
-        opacity: 0.7;
-    }
-    .profile-pic {
-        width: 100%;
-        margin-top: 50px;
-        height: auto;
-    } 
-    .mainContent {
-        padding: 70px;
-        background-color:rgba(144, 144, 144, 0.813);
-    }
-    .icon{
-        margin: 24px 0;
-    }
-    .a-icon{
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-    }
-    /* about Me*/
-    .aboutMe1 {grid-area: header;}
-    .aboutMe2 {grid-area: main;}
-    .aboutMe3 {grid-area: header2;}
-    .aboutMe4 {grid-area: footer;}
-    .aboutMe5 {grid-area: footer2;}
-    .grid {
-        display: grid;
-        grid-template-areas:
-        'header'
-        'main'
-        'header2'
-        'footer'
-        'footer2';
-        gap: 10px;
-        background-color:rgba(144, 144, 144, 0.813);
-        padding: 70px;
-        margin: 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    /* Table related format   */
-    .table-about {
-        border-collapse: separate;
-        width: 100%;
-        border-spacing: 0;
-        background-color:rgb(170, 186, 202);
-        padding: 70px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    td, th {
-        text-align: left;
-        padding: 10px 10px 10px 10px;
-    }
-    .aboutMe6 {
-        padding: 70px;
-        background-color:rgb(170, 186, 202);
-    }
-    /*academic*/
-    .table-academic {
-        border-collapse: collapse;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 100%;
-        border-spacing: 20px;
-        padding: 70px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    .credential-area {
-        background-color: aquamarine;
-        height:200px;
-        padding-left: 70px;
-    }
-    .program-area {
-        width:70%;
-    }
-    .credential {
-        font-size: 20px;
-        font-weight: bold;
-        color:rgb(0, 0, 0)
-    }
-    .period {
-        font-size: 18px;
-        color:rgba(0, 0, 0, 0.423)
-    }
-    .program {
-        font-size: 20px;
-        font-weight: bold;
-        color:rgb(0, 0, 0)
-    }
-    .institution {
-        font-size: 18px;
-        color:rgba(0, 0, 0, 0.423)
-    }
-    /*Contact Form*/
-    #contact-group {
-        background-color: rgba(223, 219, 219, 0.874);
-        padding-left: 70px;
-        margin-bottom: 50px;
-        box-sizing: border-box;
-        font-size: 18px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    .contact-group-title {
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .vistor-data {
-        width:70%;
-        height: 30px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    #message{
-        width:70%;
-    }
-    #contact-submit{
-        border: none;
-        margin: 30px;
-        border: none;
-        color: rgba(0, 0, 0, 0.78);
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-    }
-    /*Skill bar*/
-    .container-skill {
-        width: 100%;
-        background-color: #d6d1d1;
-        border-radius: 30px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    .skills {
-        text-align: right;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color: rgb(255, 255, 255);
-        border-radius: 30px;
-    }
-    .title-skill {
-        text-align: left;  
-        color: rgb(0, 0, 0);
-        font-size: 18px;
-    }
-    .excel {width: 90%; background-color: #1cc2ceda;}
-    .cPlusPlus {width: 70%; background-color: #1cc2ceda;}
-    .js {width: 60%; background-color: #1cc2ceda;}
-    .html-skill {width: 60%; background-color: #1cc2ceda;}
+@media (max-width: 400px) {
+    #background {flex-direction: column;}
+    .a-cvArea {font-size: 18px;}
+    .a-icon{font-size: 18px;}
+    .aboutMe1 {grid-area: header; font-size: 16px;}
+    .aboutMe2 {grid-area: main; font-size: 14px;}
+    .aboutMe3 {grid-area: header2; font-size: 16px;}
+    .aboutMe4 {grid-area: footer; font-size: 14px;}
+    .aboutMe5 {grid-area: footer2; font-size: 14px;}
+    .credential {font-size: 16px;}
+    .period {font-size: 14px;}
+    .program {font-size: 16px;}
+    .institution {font-size: 14px;}
+    #contact-group {font-size: 14px;}
+    .title-skill {font-size: 14px;}
+
 }
 
