@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ka Yun William Yeung" />
+
+    <title>WEB222 Final Assessment</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div id="pic">
+        <!--Dynamically insert my pic here-->
+      </div>
+      
+      <div id="links">
+            <!--Dynamically insert the buttons here-->    
+      </div>
+      
+    </header>
+
+    <main>
+        <div id="background">
+            <!--Dynamically insert my background here-->
+        </div>
+
+        <div id="academic">
+            <!--Dynamically insert my academic info here-->
+        </div>
+
+        <!--Skills-->
+        <h2>Skills</h2>
+
+        <p class="title-skill">Excel (VBA)</p>
+        <div class="container-skill">
+            <div class="skills excel">90%</div>
+        </div>
+
+        <p class="title-skill">C / C++</p>
+        <div class="container-skill">
+            <div class="skills cPlusPlus">70%</div>
+        </div>
+
+        <p class="title-skill">JavaScript</p>
+        <div class="container-skill">
+            <div class="skills js">60%</div>
+        </div>
+
+        <p class="title-skill">HTML</p>
+        <div class="container-skill">
+            <div class="skills html-skill">60%</div>
+        </div>
+
+        <!--Form-->
+        <div id="contact-group">
+            <h1 class="contact-group-title">Contact Me Here</h1>
+
+            <div id="error-msg" class="error hidden"></div>
+
+            <form id="contact-me" action="https://httpbin.org/post" method="POST">
+                <label for="name">Name</label><br>
+                <input class="vistor-data" type="text" id="name" name="name" placeholder="Your Name" required><br>
+              
+                <label for="email">Email Address</label><br>
+                <input class="vistor-data" type="email" id="email" name="email" placeholder="abc@example.com" pattern="[^\s@]+@[^\s@]+\.[^\s@]+"required><br>
+              
+                <label for="address">Address</label><br>
+                <input class="vistor-data" type="text" id="address" name="address" required><br>
+              
+                <label for="city">City</label><br>
+                <input class="vistor-data" type="text" id="city" name="city" list="cities" required><br>
+                <datalist id="cities">
+                  <option value="Toronto">
+                  <option value="Vancouver">
+                  <option value="Montreal">
+                  <option value="Calgary">
+                  <option value="Edmonton">
+                  <option value="Ottawa">
+                  <option value="Quebec City">
+                </datalist>
+              
+                <label for="postal-code">Postal Code</label><br>
+                <input class="vistor-data" type="text" id="postal-code" name="postal-code" pattern="[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d" required><br>
+              
+                <label>What is this about?</label>
+                <div>
+                  <input type="radio" id="question" name="reason" value="Question" required>
+                  <label for="question">Question</label>
+                </div>
+                <div>
+                  <input type="radio" id="comment" name="reason" value="Comment" required>
+                  <label for="comment">Comment</label>
+                </div>
+                <div>
+                  <input type="radio" id="hiring" name="reason" value="Hiring" required>
+                  <label for="hiring">Hiring</label>
+                  <div id="hourly-rate-container" style="display:none;">
+                    <label for="hourly-rate">Hourly Rate</label>
+                    <input type="number" id="hourly-rate" name="hourly-rate" min="0" step="0.01" placeholder="In CAD"required>
+                  </div>
+                </div>
+
+                <br>
+              
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+
+                <button id="contact-submit" type="submit">Submit</button><br>
+            </form>
+
+        </div>
+
+        
+          
+
+
+    </main>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/info.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+  </style>
+</html>
